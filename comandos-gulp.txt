@@ -1,0 +1,24 @@
+#comandos GULP
+node -v
+
+npm -v
+
+npm init
+
+npm install -g gulp
+
+gulp -v
+
+npm install --save-dev gulp
+
+npm install gulp-jshint gulp-sass gulp-concat gulp-uglify gulp-rename --save-dev
+
+npm install --save-dev jshint gulp-jshint
+
+npm install --save-dev gulp-livereload
+
+npm install --save-dev gulp-minify-css
+
+npm install --save-dev gulp-autoprefixer
+
+npm install --save-dev gulp-imagemin

@@ -1,0 +1,39 @@
+body {
+	height: 100%;
+	font-size: 16px;
+	background-image: url(../images/sayagata-400px.png);
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: #002E82;
+	font-size: 30px;
+	margin: 170px 0 0 0;
+}
+
+.fa-long-arrow-left {
+	margin-right: 10px;
+}
+
+.boton {
+	text-align: center;
+	font-size: 25px;
+	list-style: none;
+	margin: 50px 0;
+	padding: 0;
+}
+
+.boton li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 50px;
+	background: #002E82;
+	border-radius: 0.3125em;
+}
+
+.boton li a:hover {
+	background: #3F73D1;
+	transition: 0.5s; 
+}
+

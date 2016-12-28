@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-size: 16px;
+  background-image: url(../images/sayagata-400px.png);
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 4.375em;
+  nav {
+    width: 100%;
+    height: 4.375em;
+    background: #919191;
+    position: fixed;
+    z-index: 3;
+    ul {
+      overflow: hidden;
+      list-style: none;
+      float: right;
+      li {
+        float: left;
+        height: 4.375em;
+        a {
+          color: #fff;
+          padding: 1.625em 1.25em;
+          display: block;
+          text-decoration: none;
+        }
+        i {
+          margin-right: 0.625em;
+        }
+        a:hover {
+          background: #BDBDBD;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+form {
+  width: 28.125em;
+  margin: auto;
+  margin-top: 2.5em;
+  margin-bottom: 1.25em;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1.875em 1.25em 0.625em 1.25em;
+  box-sizing: border-box;
+  border-radius: 0.4375em;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1.25em;
+  padding: 0.4375em;
+  box-sizing: border-box;
+  font-size: 1.0625em;
+  border: none;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 1.25em;
+  padding: 0.4375em;
+  box-sizing: border-box;
+  font-size: 1.0625em;
+  border: none;
+  min-height: 6.25em;
+  max-height: 12.5em;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.875em;
+  text-align: center;
+  color: #002E82;
+  margin-top: 0.9375em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5625em;
+  color: #363F42;
+  margin-top: 1.25em;
+}
+
+p {
+  color: #363F42;
+  font-size: 1.25em;
+  text-align: center;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+}
+
+footer {
+  background: #919191;
+  height: 100%;
+  padding: 1.25em;
+  p {
+    text-align: center;
+  }
+}
+
+#inicio {
+  margin: 0 auto;
+}
+
+.inicio-m {
+  padding: 0 0.4375em 0 0.4375em;
+}
+
+#terrenos, #maquinarias, #contacto {
+  border-top: 3.4375em solid #002E82;
+}
+
+.contacto-m {
+  padding: 0 0.4375em 0 0.4375em;
+}
+
+.contacto p {
+  margin-bottom: 2.5em;
+}
+
+.numeros {
+  text-align: center;
+  font-size: 1.25em;
+  list-style: none;
+  li {
+    margin-bottom: 2.5em;
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.625em;
+      background: #002E82;
+      border-radius: 0.3125em;
+      &:hover {
+        background: #3F73D1;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+#boton {
+  background: #002E82;
+  color: #fff;
+  padding: 1.25em;
+  &:hover {
+    cursor: pointer;
+    background: #3F73D1;
+    transition: 0.5s;
+  }
+}
+
+.menu_bar {
+  display: none;
+}
+
+.logo {
+  width: 16.875em;
+  height: 4.375em;
+  margin-left: 0.9375em;
+  h1 {
+    font-size: 1em;
+    margin: 0;
+    img {
+      height: 3.4375em;
+      margin-top: 0.4375em;
+    }
+  }
+}
+
+.main {
+  width: 60%;
+  max-width: 62.5em;
+  margin: 1.25em auto;
+}
+
+.slides {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.slidesjs-control {
+  z-index: 2;
+}
+
+.slidesjs-pagination {
+  height: 2.375em;
+  background: #919191;
+  list-style: none;
+  overflow: hidden;
+  li {
+    float: left;
+    a {
+      display: block;
+      padding: 0.625em 1.25em;
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        background: #000;
+      }
+    }
+  }
+}
+
+.slides .active {
+  background: #000;
+}
+
+.slidesjs-navigation {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.6875em 1.25em;
+  float: right;
+}
+
+.detalles {
+  margin-left: 21.3%;
+  margin-bottom: 2.5em;
+  font-size: 0.9375em;
+}
+
+/*First Mobile Design */
+@media screen and (max-width: 50em) {
+  .logo {
+    display: none;
+  }
+  header nav {
+    width: 50%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    top: 4.375em;
+    ul {
+      float: left;
+      width: 100%;
+      li {
+        display: block;
+        float: none;
+        border-bottom: 0.0625em solid rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  .menu_bar {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: #919191;
+    z-index: 4;
+    .bt-menu {
+      display: block;
+      padding: 1.25em;
+      background: #919191;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    i {
+      float: right;
+      font-size: 1.2em;
+    }
+  }
+  .main {
+    width: 95%;
+  }
+  form {
+    width: 100%;
+  }
+  .detalles {
+    margin-left: 7%;
+  }
+  p {
+    text-align: justify;
+  }
+}
